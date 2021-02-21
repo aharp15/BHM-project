@@ -26,6 +26,17 @@ window.onload = function(){
 		
 			setInfo();
 		});
+	
+		$('btnBack').addEventListener('click', function(){
+
+				if(counter < figures.length-1){
+					counter--;
+				}else{
+					counter = 0;
+				}
+
+				setInfo();
+			});
 		
 		$('btnLearn').addEventListener('click', function(){
 			
